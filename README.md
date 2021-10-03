@@ -5,6 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Demo
 You can find the demo [here](https://olachrzan.github.io/to_do_list_react/)
 
+## Technologies
+- HTML
+- CSS
+- JavaScript
+- BEM
+- Create React App
+
 ## Available Scripts
 
 In the project directory, you can run:

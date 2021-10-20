@@ -1,13 +1,13 @@
 import "./style.css";
 
-const TextButtons = ({ tasks, hideDoneTasks }) => {
+const TextButtons = ({ tasks, hideDone }) => {
    if (tasks.length === 0)
       return null;
 
    return (
       <div className="textButtons">
          <button className="textButtons__button">
-            {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+            {hideDone ? "Pokaż" : "Ukryj"} ukończone
          </button>
          <button
             className="textButtons__button"

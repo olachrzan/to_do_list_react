@@ -15,7 +15,7 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     flex-direction: column;
   }
 `;
@@ -24,7 +24,7 @@ const Title = styled.h2`
   font-size: 20px;
   margin: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     align-self: flex-start;
   }
 `;

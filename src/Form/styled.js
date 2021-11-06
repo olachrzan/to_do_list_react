@@ -6,7 +6,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     flex-direction: column;
   }
 `;
@@ -17,14 +17,14 @@ const Input = styled.input`
   padding: 8px;
   border: 2px solid #ddd;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     margin: 0 0 10px 0;
   }
 `;
 
 const Button = styled.input`
   padding: 9px;
-  background-color: teal;
+  background-color: ${({theme}) => theme.colors.teal };
   color: #fff;
   border: none;
   transition: background-color 0.4s, transform 0.4s;
@@ -39,7 +39,7 @@ const Button = styled.input`
   background-color: hsl(180, 100%, 30%);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     flex-grow: 1;
   }
 `;

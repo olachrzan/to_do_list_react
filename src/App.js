@@ -1,10 +1,20 @@
 import { useEffect, useState } from "react";
+import { ThemeProvider } from "styled-components";
 import Form from "./Form";
 import TasksList from "./TasksList";
 import TextButtons from "./TextButtons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
+
+const theme = {
+	colors: {
+		teal: "hsl(180, 100%, 25%)",
+	},
+	breakpoints: {
+		mobile: "768px",
+	},
+}
 
 function App() {
 	const storedTasks = localStorage.getItem("tasks");
@@ -55,32 +65,34 @@ function App() {
 	};
 
 	return (
-		<Container>
-			<Header />
-			<Section
-				title="Dodaj nowe zadanie"
-				body={<Form addNewTask={addNewTask} />}
-			/>
-			<Section
-				title="Lista zadań"
-				extraHeaderContent={
-					<TextButtons
-						tasks={tasks}
-						hideDone={hideDone}
-						toggleHideDone={toggleHideDone}
-						setAllDone={setAllDone}
-					/>
-				}
-				body={
-					<TasksList
-						tasks={tasks}
-						hideDone={hideDone}
-						removeTask={removeTask}
-						toggleTaskDone={toggleTaskDone}
-					/>
-				}
-			/>
-		</Container>
+		<ThemeProvider theme={theme}>
+			<Container>
+				<Header />
+				<Section
+					title="Dodaj nowe zadanie"
+					body={<Form addNewTask={addNewTask} />}
+				/>
+				<Section
+					title="Lista zadań"
+					extraHeaderContent={
+						<TextButtons
+							tasks={tasks}
+							hideDone={hideDone}
+							toggleHideDone={toggleHideDone}
+							setAllDone={setAllDone}
+						/>
+					}
+					body={
+						<TasksList
+							tasks={tasks}
+							hideDone={hideDone}
+							removeTask={removeTask}
+							toggleTaskDone={toggleTaskDone}
+						/>
+					}
+				/>
+			</Container>
+		</ThemeProvider>
 	);
 }
 

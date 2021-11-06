@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     flex-direction: column;
   }
 `;
@@ -13,7 +13,7 @@ const Button = styled.button`
   padding: 0;
   border: none;
   background-color: transparent;
-  color: hsl(180, 100%, 25%);
+  color: ${({theme}) => theme.colors.teal };
   transition: color 0.4s;
 
   &:hover {
@@ -30,7 +30,7 @@ const Button = styled.button`
     cursor: default;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     margin: 20px 0 0 0;
   }
 `;

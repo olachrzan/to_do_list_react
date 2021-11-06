@@ -10,8 +10,9 @@ You can find the demo [here](https://olachrzan.github.io/to_do_list_react/)
 - HTML
 - CSS
 - JavaScript
-- BEM
 - Create React App
+- React Hooks
+- Styled Components
 
 ## Available Scripts
 

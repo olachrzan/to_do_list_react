@@ -5,7 +5,6 @@ import Form from "./Form";
 import TasksList from "./TasksList";
 import TextButtons from "./TextButtons";
 import Section from "./Section";
-import Header from "./Header";
 import Container from "./Container";
 
 const theme = {
@@ -29,7 +28,7 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<Container>
-				<Header />
+				<h1>Lista zadań</h1>
 				<Section
 					title="Dodaj nowe zadanie"
 					body={<Form addNewTask={addNewTask} />}

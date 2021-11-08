@@ -6,7 +6,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     flex-direction: column;
   }
 `;
@@ -17,29 +17,29 @@ const Input = styled.input`
   padding: 8px;
   border: 2px solid #ddd;
 
-  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 0 0 10px 0;
   }
 `;
 
 const Button = styled.input`
   padding: 9px;
-  background-color: ${({theme}) => theme.colors.teal };
-  color: #fff;
+  background-color: ${({ theme }) => theme.colors.teal};
+  color: ${({ theme }) => theme.colors.white};
   border: none;
-  transition: background-color 0.4s, transform 0.4s;
+  transition: filter 0.4s, transform 0.4s;
 
   &:hover {
-  background-color: hsl(180, 100%, 28%);
-  transform: scale(1.04);
-  cursor: pointer;
+    filter: brightness(110%);
+    transform: scale(1.04);
+    cursor: pointer;
   }
 
   &:active {
-  background-color: hsl(180, 100%, 30%);
+    filter: brightness(120%);
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     flex-grow: 1;
   }
 `;

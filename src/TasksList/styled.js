@@ -29,32 +29,24 @@ const Content = styled.span`
 const Button = styled.button`
   height: 25px;
   width: 25px;
-  background-color: hsl(120, 100%, 25%);
-  color: #fff;
+  background-color: ${({ theme }) => theme.colors.green};
+  color: ${({ theme }) => theme.colors.white};
   border: none;
   font-size: 14px;
   flex-shrink: 0;
-  transition: background-color 0.4s;
+  transition: filter 0.4s;
 
   &:hover {
-    background-color: hsl(120, 100%, 30%);
+    filter: brightness(110%);
     cursor: pointer;
   }
 
   &:active {
-    background-color: hsl(120, 100%, 34%);
+    filter: brightness(120%);
   }
 
   ${({ remove }) => remove && css`
-    background-color: hsl(348, 83%, 47%);
-
-    &:hover {
-      background-color: hsl(348, 83%, 54%);
-    }
-
-    &:active {
-      background-color: hsl(348, 83%, 58%);
-    }
+    background-color: ${({ theme }) => theme.colors.crimson};
   `}
 `;
 

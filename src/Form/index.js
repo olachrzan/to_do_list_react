@@ -25,9 +25,10 @@ const Form = ({ addNewTask }) => {
             autoFocus
          />
          <Button
-         type="submit"
-         value="Dodaj zadanie"
-         onClick={() => inputRef.current.focus()} />
+            type="submit"
+            value="Dodaj zadanie"
+            onClick={() => inputRef.current.focus()}
+         />
       </StyledForm>
    )
 };

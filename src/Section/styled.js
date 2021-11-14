@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledSection = styled.section`
+const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.colors.white};
   padding: 0;
   margin-bottom: 10px;
@@ -29,4 +29,4 @@ const Title = styled.h2`
   }
 `;
 
-export { StyledSection, Header, Title };
+export { Wrapper, Header, Title };

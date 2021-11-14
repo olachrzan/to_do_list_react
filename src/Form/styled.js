@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledForm = styled.form`
+const NewTaskForm = styled.form`
   padding: 20px;
   margin: 0;
   display: flex;
@@ -44,4 +44,4 @@ const Button = styled.input`
   }
 `;
 
-export { StyledForm, Input, Button };
+export { NewTaskForm, Input, Button };

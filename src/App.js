@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useTasks } from "./useTasks";
-import Form from "./Form";
-import TasksList from "./TasksList";
-import TextButtons from "./TextButtons";
-import Section from "./Section";
-import Container from "./Container";
+import { useTasks } from "./features/tasks/useTasks";
+import Form from "./features/tasks/Form";
+import TasksList from "./features/tasks/TasksList";
+import TextButtons from "./features/tasks/TextButtons";
+import Section from "./common/Section";
+import Container from "./common/Container";
 
 function App() {
 	const [hideDone, setHideDone] = useState(false);

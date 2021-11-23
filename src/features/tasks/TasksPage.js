@@ -4,7 +4,7 @@ import TextButtons from "./TextButtons";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
 
-const TasksSide = () => {
+const TasksPage = () => {
 
 	return (
 		<Container>
@@ -22,4 +22,4 @@ const TasksSide = () => {
 	);
 }
 
-export default TasksSide;
+export default TasksPage;

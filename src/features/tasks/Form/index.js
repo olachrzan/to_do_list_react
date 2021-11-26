@@ -5,43 +5,43 @@ import { addTask } from "../tasksSlice";
 import { NewTaskForm, Input, Button } from "./styled";
 
 const Form = () => {
-   const inputRef = useRef(null);
-   const [newTaskContent, setNewTaskContent] = useState("");
+	const inputRef = useRef(null);
+	const [newTaskContent, setNewTaskContent] = useState("");
 
-   const dispatch = useDispatch();
+	const dispatch = useDispatch();
 
-   const onFormSubmit = (event) => {
-      event.preventDefault();
-      const trimmedNewTaskContent = newTaskContent.trim();
-      if (trimmedNewTaskContent === "") {
-         return
-      }
+	const onFormSubmit = (event) => {
+		event.preventDefault();
+		const trimmedNewTaskContent = newTaskContent.trim();
+		if (trimmedNewTaskContent === "") {
+			return
+		}
 
-      dispatch(addTask({
-         content: trimmedNewTaskContent,
-         done: false,
-         id: nanoid()
-      }));
+		dispatch(addTask({
+			content: trimmedNewTaskContent,
+			done: false,
+			id: nanoid()
+		}));
 
-      setNewTaskContent("");
-   };
+		setNewTaskContent("");
+	};
 
-   return (
-      <NewTaskForm onSubmit={onFormSubmit}>
-         <Input
-            value={newTaskContent}
-            onChange={({ target }) => setNewTaskContent(target.value)}
-            placeholder="Co jest do zrobienia?"
-            ref={inputRef}
-            autoFocus
-         />
-         <Button
-            type="submit"
-            value="Dodaj zadanie"
-            onClick={() => inputRef.current.focus()}
-         />
-      </NewTaskForm>
-   )
+	return (
+		<NewTaskForm onSubmit={onFormSubmit}>
+			<Input
+				value={newTaskContent}
+				onChange={({ target }) => setNewTaskContent(target.value)}
+				placeholder="Co jest do zrobienia?"
+				ref={inputRef}
+				autoFocus
+			/>
+			<Button
+				type="submit"
+				value="Dodaj zadanie"
+				onClick={() => inputRef.current.focus()}
+			/>
+		</NewTaskForm>
+	)
 };
 
 export default Form;

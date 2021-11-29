@@ -1,8 +1,9 @@
 import Form from "./Form";
 import TasksList from "./TasksList";
-import TextButtons from "./TextButtons";
+import DoneTasksButtons from "./textButtons/DoneTasksButtons";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
+import ExampleTasksButton from "./textButtons/ExampleTasksButton";
 
 const TasksPage = () => {
 
@@ -11,11 +12,12 @@ const TasksPage = () => {
 			<h1>Lista zadań</h1>
 			<Section
 				title="Dodaj nowe zadanie"
+				extraHeaderContent={<ExampleTasksButton />}
 				body={<Form />}
 			/>
 			<Section
 				title="Lista zadań"
-				extraHeaderContent={<TextButtons />}
+				extraHeaderContent={<DoneTasksButtons />}
 				body={<TasksList />}
 			/>
 		</Container>

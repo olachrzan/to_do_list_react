@@ -13,6 +13,5 @@ export const GlobalStyle = createGlobalStyle`
     word-break: break-word;
     background-color: ${({ theme }) => theme.colors.gallery};
     font-family: 'Open Sans', sans-serif;
-    padding: 0 20px;
   }
 `;

@@ -32,7 +32,7 @@ const tasksSlice = createSlice({
       state.loading = true;
     },
     fetchExampleTasksSuccess: (state, { payload: tasks }) => {
-      state.tasks = tasks;
+      state.tasks = tasks.concat(state.tasks);
       state.loading = false;
     },
     fetchExampleTasksFailure: state => {

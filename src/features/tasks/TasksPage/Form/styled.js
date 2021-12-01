@@ -11,17 +11,6 @@ const NewTaskForm = styled.form`
   }
 `;
 
-const Input = styled.input`
-  flex-grow: 1;
-  margin-right: 10px;
-  padding: 8px;
-  border: 2px solid #ddd;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin: 0 0 10px 0;
-  }
-`;
-
 const Button = styled.input`
   padding: 9px;
   background-color: ${({ theme }) => theme.colors.teal};
@@ -44,4 +33,4 @@ const Button = styled.input`
   }
 `;
 
-export { NewTaskForm, Input, Button };
+export { NewTaskForm, Button };

@@ -4,6 +4,7 @@ import DoneTasksButtons from "./textButtons/DoneTasksButtons";
 import Section from "../../../common/Section";
 import Container from "../../../common/Container";
 import ExampleTasksButton from "./textButtons/ExampleTasksButton";
+import Search from "./Search";
 
 const TasksPage = () => {
 	return (
@@ -13,6 +14,10 @@ const TasksPage = () => {
 				title="Dodaj nowe zadanie"
 				extraHeaderContent={<ExampleTasksButton />}
 				body={<Form />}
+			/>
+			<Section
+				title="Znajdź zadanie"
+				body={<Search />}
 			/>
 			<Section
 				title="Lista zadań"

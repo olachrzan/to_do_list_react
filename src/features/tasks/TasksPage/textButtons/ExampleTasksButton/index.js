@@ -1,18 +1,24 @@
 import { useDispatch, useSelector } from "react-redux";
-import { fetchExampleTasks, selectLoading } from "../../../tasksSlice";
+import { fetchExampleTasks, selectTasksId, selectLoading } from "../../../tasksSlice";
 import { Container, Button } from "../styled";
 
 const ExampleTasksButton = () => {
 	const dispatch = useDispatch();
 	const loading = useSelector(selectLoading);
+	const taskId = useSelector(selectTasksId);
 
 	return (
 		<Container>
 			<Button
-				disabled={loading}
+				disabled={loading || taskId === "Fis3G6NsVjamc56tA-MlC" || taskId === "2931yO2GKzfC6VG743XzR"}
 				onClick={() => dispatch(fetchExampleTasks())}
 			>
-				{loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
+				{
+					loading
+						? "Ładowanie..."
+						: (taskId === "Fis3G6NsVjamc56tA-MlC" || taskId === "2931yO2GKzfC6VG743XzR"
+							? "Przykładowe zadania zostały pobrane"
+							: "Pobierz przykładowe zadania")}
 			</Button>
 		</Container>
 	)

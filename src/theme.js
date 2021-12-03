@@ -7,6 +7,7 @@ export const theme = {
 		crimson: "#DB143C",
 	},
 	breakpoints: {
-		mobile: "768px",
+		medium: "768px",
+		small: "590px",
 	},
 }

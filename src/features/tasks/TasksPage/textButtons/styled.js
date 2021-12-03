@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     flex-direction: column;
   }
 `;
@@ -30,7 +30,7 @@ const Button = styled.button`
     cursor: default;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     margin: 20px 0 0 0;
   }
 `;

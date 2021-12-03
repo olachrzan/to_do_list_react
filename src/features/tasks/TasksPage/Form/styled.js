@@ -6,7 +6,7 @@ const NewTaskForm = styled.form`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;
   }
 `;
@@ -26,10 +26,6 @@ const Button = styled.input`
 
   &:active {
     filter: brightness(120%);
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    flex-grow: 1;
   }
 `;
 

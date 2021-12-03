@@ -1,19 +1,22 @@
 # ✅ To Do List with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br>
-This website is a to-do list. You can add new tasks and they will be displayed below.<br>A great facilitation is that after saving a task, focus stays on the input, so you can enter several tasks in a row.<br>Saved tasks can be marked as done by clicking the green button (then they will be crossed out) or they can be deleted by clicking the red button.<br>It's also possible to interact on several buttons at once - you can hide/show completed tasks or mark all tasks as done.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br><br>
+This website is a to-do list. You can add new tasks and they will be displayed below.<br>A great facilitation is that after saving a task, focus stays on the input, so you can enter several tasks in a row.<br>There is a button in the save section that fetch example tasks, so you can see how this app works without adding your own tasks.<br>Saved tasks can be marked as done by clicking the green button (then they will be crossed out) or they can be deleted by clicking the red button.<br>It's also possible to interact on several tasks at once - you can hide/show completed tasks or mark all tasks as done.<br>Additionally, above the list of tasks there is a search engine - just start typing to find the task that you are interested in.<br>There is a navigation at the top, so you can switch between the task list and the page about author where you can find a brief about me.
 
 ## Demo
 You can find the demo [here](https://olachrzan.github.io/to_do_list_react/)
 
 ## Technologies
 - HTML
-- CSS
-- JavaScript
+- CSS (Grid, Flex, media queries)
+- JavaScript (ES6+)
+- Promise, async / await
 - Create React App
 - React Hooks
+- React Router
 - Styled Components
 - Redux
+- Redux-Saga
 
 ## Available Scripts
 

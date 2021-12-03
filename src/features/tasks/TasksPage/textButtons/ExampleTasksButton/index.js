@@ -16,7 +16,7 @@ const ExampleTasksButton = () => {
 				loading
 					? "Ładowanie..."
 					: (taskId === "Fis3G6NsVjamc56tA-MlC" || taskId === "2931yO2GKzfC6VG743XzR"
-						? "Przykładowe zadania zostały pobrane"
+						? "Pobrano przykładowe zadania"
 						: "Pobierz przykładowe zadania")}
 		</Button>
 	)

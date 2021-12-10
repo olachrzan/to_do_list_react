@@ -1,7 +1,44 @@
 # ✅ To Do List with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br><br>
-This website is a to-do list. You can add new tasks and they will be displayed below.<br>A great facilitation is that after saving a task, focus stays on the input, so you can enter several tasks in a row.<br>There is a button in the save section that fetch example tasks, so you can see how this app works without adding your own tasks.<br>Saved tasks can be marked as done by clicking the green button (then they will be crossed out) or they can be deleted by clicking the red button.<br>It's also possible to interact on several tasks at once - you can hide/show completed tasks or mark all tasks as done.<br>If you want to see details of the task, click on its content - you will be redirected to the subpage of the task.<br>Additionally, above the list of tasks there is a search engine - just start typing to find the task that you are interested in.<br>There is a navigation at the top, so you can switch between the task list and the page about author where you can find a brief about me.
+## Table of contents
+* [Description](#description)
+* [Overview](#overview)
+* [Demo](#demo)
+* [Technologies](#technologies)
+* [Available Scripts](#available-scripts)
+## Description
+<p>This website is a to-do list. What you can do:</p>
+<ul>
+  <li>
+    <strong>Add new tasks</strong>
+    <p>You can add new tasks and they will be displayed below. A great facilitation is that after saving a task, focus stays on the input, so you can enter several tasks in a row.</p>
+  </li>
+  <li>
+    <strong>Fetch example tasks</strong>
+    <p>There is a button in the save section that fetch example tasks, so you can see how this app works without adding your own tasks.</p>
+  </li>
+  <li>
+    <strong>Actions on tasks</strong>
+    <p>Saved tasks can be marked as done by clicking the green button (then they will be crossed out) or they can be deleted by clicking the red button.<br>It's also possible to interact on several tasks at once - you can hide/show completed tasks or mark all tasks as done.</p>
+  </li>
+  <li>
+    <strong>Details of the task</strong>
+    <p>If you want to see details of the task, click on its content - you will be redirected to the subpage of the task.</p>
+  </li>
+  <li>
+    <strong>Tasks search</strong>
+    <p>Additionally, above the list of tasks there is a search engine - just start typing to find the task that you are interested in.</p>
+  </li>
+  <li>
+    <strong>Navigation</strong>
+    <p>There is a navigation at the top, so you can switch between the task list and the page about author where you can find a brief about me.</p>
+  </li>
+</ul>
+
+<p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a></p>
+
+## Overview
+<img src="demo.gif" alt="Welcome gif" width="600">
 
 ## Demo
 You can find the demo [here](https://olachrzan.github.io/to_do_list_react/)

@@ -7,7 +7,9 @@
 * [Technologies](#technologies)
 * [Available Scripts](#available-scripts)
 ## Description
-<p>This website is a to-do list. What you can do:</p>
+<p>This project is the result of developing the <a href="https://github.com/olachrzan/to_do_list">previous version of to-do list</a>.</p>
+  
+ <p>What you can do:</p>
 <ul>
   <li>
     <strong>Add new tasks</strong>

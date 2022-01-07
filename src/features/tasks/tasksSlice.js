@@ -32,8 +32,7 @@ const tasksSlice = createSlice({
       state.loading = true;
     },
     fetchExampleTasksSuccess: (state, { payload: tasks }) => {
-      const tasksCopy = [...tasks];
-      state.tasks.push(tasksCopy.filter(task => state.tasks.some(t => t.content !== task.content)));
+      state.tasks.push(...tasks);
       state.loading = false;
     },
     fetchExampleTasksFailure: state => {
